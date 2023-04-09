@@ -1,0 +1,84 @@
+{
+  "sneakers": [
+    {
+      "id": 0,
+      "imageUrl": "https://i.pinimg.com/originals/44/58/bb/4458bb1d2f5cea971695245a43e4c05a.jpg",
+      "name": "Jordan 2 Retro Eminem",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 1999,
+      "category": 0,
+      "rating": 2
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://i.pinimg.com/originals/9e/af/71/9eaf71667fd3364d284784129cf79f15.jpg",
+      "name": "Air Jordan 4 Retro Kaws",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price":1327,
+      "category": 0,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://i.pinimg.com/originals/f4/0f/a6/f40fa697c4115490735fea3c181c9c2b.jpg",
+      "name": "Nike SB Low Travis Scott",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 1259,
+      "category": 1,
+      "rating": 6
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://i.pinimg.com/originals/ed/b0/8c/edb08c3d1d5a847a0c16be3ce166d270.jpg",
+      "name": "Air Jordan 3/8 Kobe Pack",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 1569,
+      "category": 0,
+      "rating": 10
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://i.pinimg.com/originals/35/3d/ce/353dceb7295f9876d5f8c43a76e98ae4.jpg",
+      "name": "Nike Dunk High Pro L. Hilton",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 1999,
+      "category": 1,
+      "rating": 7
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://i.pinimg.com/originals/67/46/2f/67462fd0c3c6fffab790fcbf0f8df035.jpg",
+      "name": "Nike Dunk Neopren",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 1195,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://i.pinimg.com/originals/ca/e3/71/cae37133b682c752720049f76680a2cb.jpg",
+      "name": "Nike Dunk Low Pro SB Paris",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 2000,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://i.pinimg.com/originals/08/ae/74/08ae7471afec88c4943dfe2879dcc6f2.jpg",
+      "name": "Air Mag",
+      "types": [0, 1],
+      "sizes": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+      "price": 2150,
+      "category": 2,
+      "rating": 10
+    }
+  ]
+}

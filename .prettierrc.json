@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "jsxSingleQuote": true,
+  "arrowParens": "avoid",
+  "max-len": ["error", 50, 2],
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "useTabs": false
+}
