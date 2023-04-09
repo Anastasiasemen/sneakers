@@ -1,6 +1,4 @@
-заметки:
-const { items, totalPrice, totalCount } = useSelector(({ cart }) => cart) 
-и айтемсы здесь объект! нашей выбранной пиццы, подумай!
+запуск проекта: сначала сервер: npx json-server --watch public/db.json --port=3001  потом открываешь след консоль и npm start
 
 # Getting Started with Create React App
 
