@@ -1,3 +1,7 @@
+@mixin displayFlex {
+  display: flex;
+  flex-direction: column;
+}
 @mixin btnOpacity {
   padding: 10px 15px;
   border: 2px $white solid;
@@ -48,6 +52,18 @@
   line-height: 18px;
 }
 
+@mixin count{
+  color: #7D7D7D;
+  padding: 13px 23px;
+  font-size: 20px;
+  cursor: pointer;
+  &:active, &:focus, &:hover{
+    background: #e0dfdf;
+    border: #ECECEC;
+    color: white;
+  }
+}
+
 @mixin selector {
   display: flex;
   flex-direction: column;
@@ -68,4 +84,18 @@
     }
 
   }
+}
+
+@mixin textAccount{
+  font-family: $FontThin;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin deletOutline{
+  outline: none !important;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }

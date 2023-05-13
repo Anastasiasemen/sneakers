@@ -8,7 +8,6 @@ const sneakers = ( state = initialState, action ) => {
       case 'SET_SNEAKERS':
           return {
               ...state,
-              // возьми старые данные из state и замени их (action.payload) нет обновлений верни прошлый state
               items: action.payload,
               isLoaded: true,
           };

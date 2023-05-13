@@ -1,5 +1,6 @@
 .content .container {
   display: flex;
+  position: relative;
   justify-content: space-around;
   padding: 2% 0;
   font-family: $FontThin;

@@ -23,6 +23,7 @@ function CartPage () {
     const addedSneakers = Object.keys(items).map(key => {
         return items[key].items[0];
     });
+    console.log(addedSneakers, 35)
 
     const onClearCart = () => {
       if(window.confirm('Вы уверены, что хотите очистить корзину?')){
@@ -93,7 +94,7 @@ function CartPage () {
                     key={obj.id}
                     id={obj.id}
                     name={obj.name}
-                    type={obj.type}
+
                     size={obj.size}
                     image={obj.imageUrl}
                     totalPrice={items[obj.id].totalPrice}

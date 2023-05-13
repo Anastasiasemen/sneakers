@@ -1,6 +1,4 @@
 заметки:
-const { items, totalPrice, totalCount } = useSelector(({ cart }) => cart) 
-и айтемсы здесь объект! нашей выбранной пиццы, подумай!
 
 # Getting Started with Create React App
 

@@ -24,11 +24,17 @@
 
     &_title{
       @include title;
-      cursor: default;
+      text-decoration: none;
+      color: black;
+      margin: 7% 0;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+      }
     }
 
     &_selector {
-      width: 100%;
+      width: 89%;
       @include selector;
     }
     &_bottom{

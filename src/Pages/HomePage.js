@@ -8,7 +8,9 @@ import IndexSneakersBlock from "../components/SneakersBlock/indexSneakersBlock";
 import { setCategories, setSortBy } from "../redux/actions/filters";
 import { fetchSneakers } from "../redux/actions/sneakers";
 import { addSneakersToCart} from '../redux/actions/cart';
+import { addProductToPage } from '../redux/actions/product';
 import Footer from '../components/Footer';
+
 
 const arrCategories = ["Jordan", "Dunk", "Mag" ];
 const sortItems = [
@@ -36,7 +38,12 @@ function HomePage() {
 
     const handleAddSneakersToCart = (obj) => {
         dispatch(addSneakersToCart(obj))
+    };
+    const handleAddProduct = (obj) => {
+      dispatch(addProductToPage(obj))
     }
+
+
 
     return (
         <div className= "wrapper">
@@ -57,6 +64,7 @@ function HomePage() {
                         isLoaded ?
                         items.map( obj => <IndexSneakersBlock
                                             onClickAddSneakers={ handleAddSneakersToCart }
+                                            onClickAddProduct={handleAddProduct}
                                             key={ obj.id }
                                             //addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                                             { ...obj }

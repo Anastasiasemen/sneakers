@@ -28,7 +28,6 @@ const cart = ( state = initialState, action ) => {
       const currentSneakersItems = !state.items[action.payload.id]
         ? [action.payload]
         : [...state.items[action.payload.id].items, action.payload];
-///если нет такого ключа state.items[action.payload.id], то создай массив, если есть то пепресоздай, дополни
       const newItems = {
         ...state.items,
         [action.payload.id]: {
