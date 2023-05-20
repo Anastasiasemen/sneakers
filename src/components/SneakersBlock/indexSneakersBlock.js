@@ -14,16 +14,16 @@ function IndexSneakersBlock ({ id, imageUrl, name, price, sizes, onClickAddSneak
     const onSelectSize = ( index ) => {
         setActiveSizes( index );
     };
-    // const onAddSneakers = () => {
-    //     const obj = {
-    //         id,
-    //         name,
-    //         imageUrl,
-    //         price,
-    //         size: availableSizes[ activeSizes ],
-    //     }
-    //     onClickAddSneakers(obj)
-    // };
+    const onAddSneakers = () => {
+        const obj = {
+            id,
+            name,
+            imageUrl,
+            price,
+            size: availableSizes[ activeSizes ],
+        }
+        onClickAddSneakers(obj)
+    };
 
     const onAddProduct = () => {
         const obj = {
@@ -69,7 +69,7 @@ function IndexSneakersBlock ({ id, imageUrl, name, price, sizes, onClickAddSneak
             <div className="sneakersBlock-cart_bottom">
                 <div className="sneakersBlock-cart_bottom_price">{ price } р.</div>
 
-                <BtnCart  className="sneakersBlock-cart_bottom_btn">
+                <BtnCart onClick={onAddSneakers}  className="sneakersBlock-cart_bottom_btn">
                     <span>В КОРЗИНУ</span>
                 </BtnCart>
 

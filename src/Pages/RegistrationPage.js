@@ -23,6 +23,7 @@ function RegistrationPage(){
       <FormProvider {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="registration_form">
           <InputForm  type="text" placeholder="Имя" name="name" patternVal={/^[А-Яа-яЁё\s]+$/} minLengthVal={2}/>
+
           <InputForm type="email" placeholder="Email" name="email" patternVal={/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/} minLengthVal={4}/>
           <InputForm type="tel" placeholder="Телефон" name="phone" patternVal={/^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$/}/>
           <InputForm type="password" placeholder="Пароль" name="password" patternVal={/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,12}$/}/>

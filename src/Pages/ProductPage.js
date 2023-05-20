@@ -6,7 +6,7 @@ import IndexProduct from '../components/indexProduct';
 
 
 function ProductPage(){
-const { product } = useSelector(({product}) => product)
+//const { product } = useSelector(({product}) => product)
 
   return(
     <section className="productPage container">
@@ -14,7 +14,7 @@ const { product } = useSelector(({product}) => product)
       {
        // addedProduct.map(obj => <ProductPage name={obj.name} price={obj.price} imageUrl={obj.imageUrl} />)
       }
-      {/*<IndexProduct name="Air Jordan 4 Retro Kaws"/>*/}
+      <IndexProduct name="Air Jordan 4 Retro Kaws"/>
       <div className="productPage_labels">
         <div className="label">
           <div className="img">

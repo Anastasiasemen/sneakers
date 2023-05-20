@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 заметки:
+=======
+запуск проекта: сначала сервер: npx json-server --watch public/db.json --port=3001  потом открываешь след консоль и npm start
+>>>>>>> 8e2b8a9b910f2065438024a15d7a0f65237d2350
 
 # Getting Started with Create React App
 
