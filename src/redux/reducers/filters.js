@@ -20,5 +20,3 @@ const filters = ( state = initialState, action ) => {
 }
 
 export default filters;
-//как только созд редьюсер ,
-// state будет по умолчанию хранить какието данные

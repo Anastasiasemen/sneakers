@@ -11,7 +11,6 @@ function CartEmpty(){
             <path d="M9.5 24C12 18.5 20 18.5 22.5 24" stroke="black" strokeWidth="2" />
           </svg>
         </div>
-
       </div>
       <div className="emptyCart-descr">К сожалению, в корзине пусто.<br />
         Для того, чтобы сделать заказ, перейдите на главную страницу.

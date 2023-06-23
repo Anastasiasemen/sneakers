@@ -1,20 +1,25 @@
-import React, { useState } from 'react';
-import classNames from 'classnames';
-import BtnCart from '../components/BtnCart';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
 import IndexProduct from '../components/indexProduct';
-
+import { useParams } from "react-router-dom";
+import axios from 'axios';
 
 function ProductPage(){
-//const { product } = useSelector(({product}) => product)
+  const {id} = useParams();
+  const [data, setData] = useState({});
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios('http://localhost:3001/sneakers',);
+      setData(res.data[id])
+    };
+    fetchData();
+  }, [])
+
 
   return(
     <section className="productPage container">
-
-      {
-       // addedProduct.map(obj => <ProductPage name={obj.name} price={obj.price} imageUrl={obj.imageUrl} />)
-      }
-      <IndexProduct name="Air Jordan 4 Retro Kaws"/>
+      <IndexProduct name={data.name} price={data.price} imageUrl={data.imageUrl}/>
       <div className="productPage_labels">
         <div className="label">
           <div className="img">

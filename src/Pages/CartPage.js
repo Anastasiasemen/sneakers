@@ -2,24 +2,14 @@ import CartItem from '../components/CartItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, removeCartItem, minusCartItem, plusCartItem } from '../redux/actions/cart';
 import CartEmpty from '../components/CarftEmpty';
-import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 import {useForm} from 'react-hook-form';
-
-import PaymentPage from './PaymentPage';
 import Footer from '../components/Footer';
-import InputForm from '../components/InputForm';
 
 
 function CartPage () {
     const dispatch = useDispatch();
     const { items, totalPrice, totalCount } = useSelector(({ cart }) => cart)
-
-    const [ validate, setValidate ] = useState(false);
-  const toggleValidate = () => {
-    setValidate( validate === true )
-  };
-
     const addedSneakers = Object.keys(items).map(key => {
         return items[key].items[0];
     });
@@ -54,7 +44,6 @@ function CartPage () {
   });
 
   const onSubmit = () => {
-    // переадресация на paymentpage отправки формы
     reset()
 
   };
@@ -127,7 +116,6 @@ function CartPage () {
                                 placeholder="Email"
                                 id="email"
                                 name="email"
-                                minLength={4}
                                 {...register('email',{
                                   required: "Обязательно к заполнению!",
                                   minLength: {
@@ -241,10 +229,7 @@ function CartPage () {
 
                     </div>
                   </div>
-
-
                 </div>
-
                 <label htmlFor="pickupChoice" id="pickup">
                   <input type="radio" id="pickupChoice"
                          name="delivery" value="pickup"/>
@@ -254,9 +239,8 @@ function CartPage () {
                 <div className="cart-bottom">
                   <div className="cart-bottom_quantity">Количество: <span>{totalCount} шт.</span></div>
                   <div className="cartPrice">Сумма заказа: <span>{totalPrice} р.</span></div>
-                  {/*<Link to = "/payment">*/}
+
                     <button className="cart-bottom_priceBtn" >ОПЛАТИТЬ СЕЙЧАС</button>
-                  {/*</Link>*/}
                 </div>
               </form>
 

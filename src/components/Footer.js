@@ -30,6 +30,10 @@ function Footer(){
 
           </svg>
         </div>
+        <div className="footer-contact">
+          <span className="text">+375 (33) 634 33 33</span>
+          <span className="text">Режим работы: Пн-Вс 10.00-21.00</span>
+        </div>
         <div className="footer-href">
           <a href="#">О НАС</a>
           <a href="#">КОНТАКТЫ</a>

@@ -1,8 +1,6 @@
 import React, { useState, memo } from "react";
 import { Dialog } from '@headlessui/react';
-import BtnCart from './BtnCart';
 import {useForm} from 'react-hook-form';
-import { Link } from 'react-router-dom';
 
 const ForgoPassword = memo( function ForgoPassword ({closeAuth}) {
 
@@ -18,10 +16,6 @@ const ForgoPassword = memo( function ForgoPassword ({closeAuth}) {
   function openModal() {
     setIsOpenPass(true);
   }
-
-  // function handleReset(){
-  //   document.getElementsByName('authForm')[0].reset();
-  // }
 
 
   const { register,

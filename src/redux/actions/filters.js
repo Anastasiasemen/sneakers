@@ -9,4 +9,3 @@ export const setSortBy = ( name ) => ({
     payload: name,
 })
 
-//actionCreator - функция которая созд объект action

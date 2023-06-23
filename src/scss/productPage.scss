@@ -8,6 +8,7 @@
     }
     .productPage_product_descr{
       @include displayFlex;
+      margin-top: 10%;
       &_item{
         @include displayFlex;
         font-size: 16px;
@@ -47,7 +48,7 @@
     &_sizes{
       @include selector;
       padding: 1% 2%;
-      width: 50%;
+      width: 45%;
       font-size: 19px;
       margin: 4% 0;
       li{
@@ -120,6 +121,33 @@
         &:active{
           padding: 16px 0px;
           margin: 14px 0 2px 1px;
+        }
+      }
+    }
+    &_reviews{
+      display: flex;
+      flex-direction: column;
+      margin-top: 4%;
+      &_title{
+        svg{
+          margin-right: 4px;
+        }
+        margin-bottom: 2.5%;
+      }
+      &_review{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2.5% 2%;
+        &_name{
+          display: flex;
+          margin-bottom: 1%;
+          .stars{
+            margin-right: 2%;
+          }
+        }
+        .text{
+          color: $placeholder;
+          width: 80%;
         }
       }
     }

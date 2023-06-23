@@ -3,9 +3,9 @@ import React, {useState} from "react";
 import PropTypes from 'prop-types';
 import BtnCart from '../BtnCart';
 import classNames from 'classnames';
-import { Link, useHistory } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 
-function IndexSneakersBlock ({ id, imageUrl, name, price, sizes, onClickAddSneakers, onClickAddProduct /*addedCount*/  } ) {
+function IndexSneakersBlock ({ id, imageUrl, name, price, sizes, onClickAddSneakers, onClickAddProduct  } ) {
     const history = useHistory();
     const [activeSizes, setActiveSizes] = useState(0);
 
@@ -25,56 +25,44 @@ function IndexSneakersBlock ({ id, imageUrl, name, price, sizes, onClickAddSneak
         onClickAddSneakers(obj)
     };
 
-    const onAddProduct = () => {
-        const obj = {
-            id,
-            name,
-            imageUrl,
-            price
-        };
-        onClickAddProduct(obj);
-    };
-
-
 
     return (
 
-        <div  className="sneakersBlock-cart">
-            {/*<div className="sneakersBlock-cart_image" onClick={onAddProduct}>*/}
-            <div className="sneakersBlock-cart_image" onClick={() => history.push( "/product" + id)}>
-                <img className="sneakersBlock-cart_img" src={ imageUrl } alt="img1"/>
-            </div>
-            <Link to="/product"  className="sneakersBlock-cart_title" >{ name }</Link>
-            <div className="sneakersBlock-cart_selector">
-                <ul className="rer">
-                    {
-                        availableSizes.map( ( size, index ) =>
-                            (
-                              <li
-                                key={ size }
-                                onClick={ () => onSelectSize( index )}
-                                className={classNames({
-                                    active: activeSizes === index,
-                                    disabled: !sizes.includes(size),
-                                  }
-                                )}
-                              > { size }
-                              </li>
-                            )
+      <div  className="sneakersBlock-cart">
+          <div className="sneakersBlock-cart_image" onClick={() => history.push( "/product" + id )}>
+              <img className="sneakersBlock-cart_img" src={ imageUrl } alt="img1"/>
+          </div>
+          <div className="sneakersBlock-cart_title" >{ name }</div>
+          <div className="sneakersBlock-cart_selector">
+              <ul className="rer">
+                  {
+                      availableSizes.map( ( size, index ) =>
+                        (
+                          <li
+                            key={ size }
+                            onClick={ () => onSelectSize( index )}
+                            className={classNames({
+                                  active: activeSizes === index,
+                                  disabled: !sizes.includes(size),
+                              }
+                            )}
+                          > { size }
+                          </li>
                         )
-                    }
+                      )
+                  }
 
-                </ul>
-            </div>
-            <div className="sneakersBlock-cart_bottom">
-                <div className="sneakersBlock-cart_bottom_price">{ price } р.</div>
+              </ul>
+          </div>
+          <div className="sneakersBlock-cart_bottom">
+              <div className="sneakersBlock-cart_bottom_price">{ price } р.</div>
 
-                <BtnCart onClick={onAddSneakers}  className="sneakersBlock-cart_bottom_btn">
-                    <span>В КОРЗИНУ</span>
-                </BtnCart>
+              <BtnCart onClick={onAddSneakers}  className="sneakersBlock-cart_bottom_btn">
+                  <span>В КОРЗИНУ</span>
+              </BtnCart>
 
-            </div>
-        </div>
+          </div>
+      </div>
 
     )
 }
@@ -85,7 +73,6 @@ IndexSneakersBlock.prototype = {
     sizes: PropTypes.array.isRequired,
     imageUrl: PropTypes.string.isRequired,
     onAddSneakers: PropTypes.func
-    //addedCount: PropTypes.number
 };
 
 IndexSneakersBlock.defaultProps = {

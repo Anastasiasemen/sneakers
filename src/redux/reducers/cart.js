@@ -101,10 +101,6 @@ const cart = ( state = initialState, action ) => {
         totalCount: state.totalCount - currentTotalCount,
       }
 
-      //возьми все старое состояние,
-    // возьми айтемс и запихни в этот объект айди.
-    // и в айди положи массив
-    //в квадратных скобках потому что нужно динамическое свойство.
     default:
       return state;
   }

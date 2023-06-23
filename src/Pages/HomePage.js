@@ -66,7 +66,6 @@ function HomePage() {
                                             onClickAddSneakers={ handleAddSneakersToCart }
                                             onClickAddProduct={handleAddProduct}
                                             key={ obj.id }
-                                            //addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                                             { ...obj }
                                             /> )
                             : Array(10)

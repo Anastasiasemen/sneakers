@@ -1,6 +1,5 @@
 import React from 'react';
-import { useForm, useFormContext } from 'react-hook-form';
-import { isTSInterfaceDeclaration } from 'eslint-plugin-react/lib/util/ast';
+import { useFormContext } from 'react-hook-form';
 
 
 function InputForm ({id, name, placeholder, type, patternVal, minLengthVal, maxLengthVal}){

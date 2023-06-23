@@ -3,8 +3,6 @@ import BtnCart from "./BtnCart";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import Authorization from './Authorization';
-import { useState } from 'react';
-
 
 function Navbar () {
 

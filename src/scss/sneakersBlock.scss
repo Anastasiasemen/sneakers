@@ -16,6 +16,7 @@
     &_image{
       width: 70%;
       height: 50%;
+      cursor: pointer;
       img{
         width: 100%;
       }
@@ -27,7 +28,6 @@
       text-decoration: none;
       color: black;
       margin: 7% 0;
-      cursor: pointer;
       a{
         text-decoration: none;
       }
@@ -51,13 +51,7 @@
 
       &_btn{
         @include btnCart;
-        //svg{
-        //  margin-right: 7px;
-        //}
       }
     }
-   
   }
-    
-  
 }

@@ -2,7 +2,6 @@ import photo from "../img/photo.png";
 import { useForm, FormProvider } from 'react-hook-form';
 import InputForm from '../components/InputForm';
 import Footer from '../components/Footer';
-
 function AccountPage(){
   const form = useForm({
     mode: 'onBlur',

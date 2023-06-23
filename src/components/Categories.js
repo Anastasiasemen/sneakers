@@ -33,7 +33,6 @@ Categories.defaultProps = {
     activeCategories: null,
     items: []
 }
-
 export default Categories;
 
 

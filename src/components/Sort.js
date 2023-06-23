@@ -69,5 +69,4 @@ Sort.prototype = {
     items: [],
 }
 
-
 export default Sort;

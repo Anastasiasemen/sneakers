@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import ForgoPassword from './ForgoPassword';
 
 const Authorization = memo( function Authorization () {
-  // const [formType, setFormType] = React.useState<'main' | 'forgotPass'>('main')
 
   const [ isOpen, setIsOpen ] = useState(false);
 
@@ -17,10 +16,6 @@ const Authorization = memo( function Authorization () {
   function openModal() {
     setIsOpen(true)
   }
-
-  // function handleReset(){
-  //   document.getElementsByName('authForm')[0].reset();
-  // }
 
 
   const { register,

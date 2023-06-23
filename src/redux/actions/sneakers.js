@@ -13,7 +13,6 @@ export const fetchSneakers = ( sortBy, categories) => ( dispatch ) => {
         dispatch(setSneakers(data))
     })
 };
-//функция фетчсникерс вызывает другую функцию и таким образом она становится асинхронной
 
 export const setSneakers = ( items ) => ({
     type: 'SET_SNEAKERS',

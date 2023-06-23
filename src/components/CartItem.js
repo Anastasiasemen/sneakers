@@ -2,7 +2,6 @@ function CartItem ({ id, name, size, image, totalPrice, totalCount, onRemove, on
   const handleRemoveClick = () => {
     onRemove(id);
   };
-
   const handlePlusItem = () => {
     onPlus(id);
   };
